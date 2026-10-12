@@ -1,0 +1,107 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Customer and administrator user profiles",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "name": { "type": "string", "maxLength": 100 },
+        "role": { "type": "string", "enum": ["CUSTOMER", "ADMIN"] },
+        "phone": { "type": "string", "maxLength": 20 },
+        "address": { "type": "string", "maxLength": 300 },
+        "city": { "type": "string", "maxLength": 100 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "email", "name", "role", "createdAt"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Sneaker product information and size variants",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number" },
+        "alias": { "type": "string" },
+        "name": { "type": "string", "maxLength": 200 },
+        "category": { "type": "string" },
+        "price": { "type": "string" },
+        "priceValue": { "type": "number" },
+        "image": { "type": "string" },
+        "available": { "type": "boolean" },
+        "sku": { "type": "string" }
+      },
+      "required": ["id", "alias", "name", "category", "priceValue", "sku"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer orders with line items, recipient details and payment status",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "payment": { "type": "string", "enum": ["cod", "transfer", "card"] },
+        "paymentStatus": { "type": "string", "enum": ["pending", "paid", "failed", "refunded"] },
+        "status": { "type": "string", "enum": ["pending", "confirmed", "shipping", "completed", "cancelled"] },
+        "subtotal": { "type": "number" },
+        "discount": { "type": "number" },
+        "shipping": { "type": "number" },
+        "total": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "payment", "status", "total", "createdAt"]
+    },
+    "InventoryMovement": {
+      "title": "InventoryMovement",
+      "description": "Audit trail log of variant stock changes",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "productId": { "type": "number" },
+        "sku": { "type": "string" },
+        "type": { "type": "string", "enum": ["import", "export", "sale", "cancel_restore", "adjustment"] },
+        "quantityDelta": { "type": "number" },
+        "reason": { "type": "string" },
+        "performedBy": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "productId", "sku", "type", "quantityDelta", "createdAt"]
+    },
+    "Coupon": {
+      "title": "Coupon",
+      "description": "Discount voucher codes",
+      "type": "object",
+      "properties": {
+        "code": { "type": "string" },
+        "discountType": { "type": "string", "enum": ["percentage", "fixed"] },
+        "discountValue": { "type": "number" },
+        "isActive": { "type": "boolean" },
+        "usageCount": { "type": "number" }
+      },
+      "required": ["code", "discountType", "discountValue", "isActive"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User customer and administrator profile collection"
+    },
+    "/products/{productId}": {
+      "schema": { "$ref": "#/entities/Product" },
+      "description": "Sneaker catalog products and variant stocks"
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/Order" },
+      "description": "Customer purchase orders and status progression"
+    },
+    "/inventoryMovements/{movementId}": {
+      "schema": { "$ref": "#/entities/InventoryMovement" },
+      "description": "Stock change history logs"
+    },
+    "/coupons/{couponId}": {
+      "schema": { "$ref": "#/entities/Coupon" },
+      "description": "Discount codes and promotional coupons"
+    }
+  }
+}

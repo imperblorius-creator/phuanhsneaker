@@ -1,0 +1,6 @@
+{
+  "name": "PhuAnh Sneaker - Cửa Hàng Giày Sneaker Chính Hãng",
+  "description": "Website thương mại điện tử chuyên cung cấp các dòng giày sneaker hot nhất: Tiger, JD, Nike, MLB, LV, Puma, Adidas với quản lý kho, đặt hàng và admin panel chuyên nghiệp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
