@@ -25,6 +25,14 @@ export const AccountView: React.FC<AccountViewProps> = ({ onNavigateHome, onNavi
   const [editCity, setEditCity] = useState<string>('');
   const [isSavingProfile, setIsSavingProfile] = useState<boolean>(false);
 
+  // Change password state
+  const { changePassword } = useAuth();
+  const [isChangingPassword, setIsChangingPassword] = useState<boolean>(false);
+  const [currentPassword, setCurrentPassword] = useState<string>('');
+  const [newPassword, setNewPassword] = useState<string>('');
+  const [confirmNewPassword, setConfirmNewPassword] = useState<string>('');
+  const [isSubmittingPassword, setIsSubmittingPassword] = useState<boolean>(false);
+
   useEffect(() => {
     if (user) {
       setEditName(user.name || '');
@@ -61,6 +69,32 @@ export const AccountView: React.FC<AccountViewProps> = ({ onNavigateHome, onNavi
     setIsSavingProfile(false);
     if (success) {
       setIsEditingProfile(false);
+    }
+  };
+
+  const handleChangePasswordSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!currentPassword || !newPassword) {
+      showToast('Vui lòng nhập mật khẩu hiện tại và mật khẩu mới', 'error');
+      return;
+    }
+    if (newPassword !== confirmNewPassword) {
+      showToast('Mật khẩu xác nhận không khớp', 'error');
+      return;
+    }
+    if (newPassword.length < 8 || !/[a-zA-Z]/.test(newPassword) || !/[0-9]/.test(newPassword)) {
+      showToast('Mật khẩu mới phải có ít nhất 8 ký tự, bao gồm cả chữ cái và chữ số', 'error');
+      return;
+    }
+
+    setIsSubmittingPassword(true);
+    const success = await changePassword({ currentPassword, newPassword });
+    setIsSubmittingPassword(false);
+    if (success) {
+      setCurrentPassword('');
+      setNewPassword('');
+      setConfirmNewPassword('');
+      setIsChangingPassword(false);
     }
   };
 
@@ -169,9 +203,16 @@ export const AccountView: React.FC<AccountViewProps> = ({ onNavigateHome, onNavi
                 <button
                   type="button"
                   onClick={() => setIsEditingProfile(true)}
-                  className="w-full mt-4 bg-gray-100 hover:bg-black hover:text-white text-black font-bold py-2.5 text-xs uppercase tracking-wider rounded transition"
+                  className="w-full mt-3 bg-gray-100 hover:bg-black hover:text-white text-black font-bold py-2 text-xs uppercase tracking-wider rounded transition"
                 >
                   Cập nhật thông tin
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setIsChangingPassword(true)}
+                  className="w-full bg-white hover:bg-red-50 border border-gray-300 hover:border-[#cc0000] text-gray-700 hover:text-[#cc0000] font-bold py-2 text-xs uppercase tracking-wider rounded transition"
+                >
+                  🔒 Đổi mật khẩu
                 </button>
               </div>
             ) : (
@@ -227,6 +268,71 @@ export const AccountView: React.FC<AccountViewProps> = ({ onNavigateHome, onNavi
                     className="bg-gray-200 text-gray-700 font-bold py-2 px-3 rounded text-[11px]"
                   >
                     Hủy
+                  </button>
+                </div>
+              </form>
+            )}
+
+            {/* Change Password Dialog/Modal */}
+            {isChangingPassword && (
+              <form onSubmit={handleChangePasswordSubmit} className="pt-4 mt-4 border-t border-gray-200 space-y-2.5 text-xs">
+                <div className="flex justify-between items-center pb-1">
+                  <span className="font-bold text-black uppercase">Đổi mật khẩu tài khoản</span>
+                  <button
+                    type="button"
+                    onClick={() => setIsChangingPassword(false)}
+                    className="text-gray-400 hover:text-black font-bold text-sm"
+                  >
+                    ✕
+                  </button>
+                </div>
+                <div>
+                  <label className="font-bold text-gray-700 block mb-1">Mật khẩu hiện tại</label>
+                  <input
+                    type="password"
+                    value={currentPassword}
+                    onChange={(e) => setCurrentPassword(e.target.value)}
+                    required
+                    placeholder="••••••••"
+                    className="w-full border border-gray-300 p-2 rounded text-xs"
+                  />
+                </div>
+                <div>
+                  <label className="font-bold text-gray-700 block mb-1">Mật khẩu mới (≥8 ký tự, chữ & số)</label>
+                  <input
+                    type="password"
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                    required
+                    placeholder="••••••••"
+                    className="w-full border border-gray-300 p-2 rounded text-xs"
+                  />
+                </div>
+                <div>
+                  <label className="font-bold text-gray-700 block mb-1">Xác nhận mật khẩu mới</label>
+                  <input
+                    type="password"
+                    value={confirmNewPassword}
+                    onChange={(e) => setConfirmNewPassword(e.target.value)}
+                    required
+                    placeholder="••••••••"
+                    className="w-full border border-gray-300 p-2 rounded text-xs"
+                  />
+                </div>
+                <div className="flex gap-2 pt-2">
+                  <button
+                    type="submit"
+                    disabled={isSubmittingPassword}
+                    className="flex-1 bg-black hover:bg-[#cc0000] text-white font-bold py-2 rounded uppercase text-[11px] transition"
+                  >
+                    {isSubmittingPassword ? 'Đang cập nhật...' : 'Xác nhận đổi mật khẩu'}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsChangingPassword(false)}
+                    className="bg-gray-200 text-gray-700 font-bold py-2 px-3 rounded text-[11px]"
+                  >
+                    Đóng
                   </button>
                 </div>
               </form>

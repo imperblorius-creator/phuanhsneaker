@@ -8,20 +8,38 @@ function getToken(): string | null {
   }
 }
 
-export function setToken(token: string | null) {
+function getCsrfToken(): string | null {
+  try {
+    return localStorage.getItem('phuanh_csrf');
+  } catch {
+    return null;
+  }
+}
+
+export function setAuthSession(token: string | null, csrfToken?: string | null) {
   try {
     if (token) {
       localStorage.setItem('phuanh_token', token);
     } else {
       localStorage.removeItem('phuanh_token');
     }
+    if (csrfToken) {
+      localStorage.setItem('phuanh_csrf', csrfToken);
+    } else if (token === null) {
+      localStorage.removeItem('phuanh_csrf');
+    }
   } catch (e) {
     console.error('Storage error:', e);
   }
 }
 
+export function setToken(token: string | null) {
+  setAuthSession(token);
+}
+
 async function request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const token = getToken();
+  const csrfToken = getCsrfToken();
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
     ...(options.headers as Record<string, string>),
@@ -30,15 +48,23 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
   if (token) {
     headers['Authorization'] = `Bearer ${token}`;
   }
+  if (csrfToken) {
+    headers['X-CSRF-Token'] = csrfToken;
+  }
 
   const response = await fetch(endpoint, {
     ...options,
+    credentials: 'same-origin',
     headers,
   });
 
   const data = await response.json().catch(() => ({}));
 
   if (!response.ok) {
+    if (response.status === 401) {
+      // Auto-clear invalid/expired session
+      setAuthSession(null, null);
+    }
     const errorMsg = data?.error?.message || data?.message || 'Có lỗi xảy ra, vui lòng thử lại';
     throw new Error(errorMsg);
   }
@@ -48,23 +74,39 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
 
 export const api = {
   // Auth
-  login: (email: string, password: string) =>
-    request<{ user: User; token: string }>('/api/auth/login', {
+  login: async (email: string, password: string) => {
+    const res = await request<{ user: User; token: string; csrfToken?: string }>('/api/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
-    }),
+    });
+    if (res.token) {
+      setAuthSession(res.token, res.csrfToken);
+    }
+    return res;
+  },
 
-  register: (payload: { name: string; email: string; password: string; phone?: string; address?: string; city?: string }) =>
-    request<{ user: User; token: string }>('/api/auth/register', {
+  register: async (payload: { name: string; email: string; password: string; phone?: string; address?: string; city?: string }) => {
+    const res = await request<{ user: User; token: string; csrfToken?: string }>('/api/auth/register', {
       method: 'POST',
       body: JSON.stringify(payload),
-    }),
+    });
+    if (res.token) {
+      setAuthSession(res.token, res.csrfToken);
+    }
+    return res;
+  },
 
   getMe: () => request<{ user: User }>('/api/auth/me'),
 
   updateProfile: (payload: { name?: string; phone?: string; address?: string; city?: string }) =>
     request<{ user: User }>('/api/auth/profile', {
       method: 'PUT',
+      body: JSON.stringify(payload),
+    }),
+
+  changePassword: (payload: { currentPassword: string; newPassword: string }) =>
+    request<{ success: boolean; message: string }>('/api/auth/change-password', {
+      method: 'POST',
       body: JSON.stringify(payload),
     }),
 

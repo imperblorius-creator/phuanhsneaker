@@ -42,8 +42,8 @@ export const LoginModal: React.FC = () => {
       showToast('Mật khẩu xác nhận không khớp', 'error');
       return;
     }
-    if (regPassword.length < 6) {
-      showToast('Mật khẩu phải từ 6 ký tự trở lên', 'error');
+    if (regPassword.length < 8 || !/[a-zA-Z]/.test(regPassword) || !/[0-9]/.test(regPassword)) {
+      showToast('Mật khẩu phải có ít nhất 8 ký tự, bao gồm cả chữ cái và chữ số', 'error');
       return;
     }
     if (!regTerms) {

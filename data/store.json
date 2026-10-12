@@ -9,7 +9,8 @@
       "address": "Số 123 Đường Sneaker, Quận 1",
       "city": "TP. Hồ Chí Minh",
       "createdAt": "2026-09-12T17:02:34.219Z",
-      "passwordHash": "2c34173d0c5ee0fd6b0048fdc830fedc5810fca7516388a7dad2a756b38093b8"
+      "passwordHash": "$2b$12$VcmXWZeKfbeZCuxI7KKksuP80YURPDTorI4B.6k1/A6HmhnKRZkEC",
+      "lastLoginAt": "2026-10-12T19:53:27.469Z"
     },
     {
       "id": "user_customer_demo",
@@ -20,10 +21,208 @@
       "address": "45/12 Lê Lợi, Phường Bến Nghé, Quận 1",
       "city": "TP. Hồ Chí Minh",
       "createdAt": "2026-09-22T17:02:34.220Z",
-      "passwordHash": "1ea24c98308deec72c2379d5c04db9287f532042b3351656c74b1a864f8843d9"
+      "passwordHash": "$2b$12$7G8xdQXkSfkPHFjMi/bZWeVOcgS/32xh9Gs/OHesCyNKgn4QEYta6",
+      "lastLoginAt": "2026-10-12T19:53:27.020Z"
+    },
+    {
+      "id": "user_1791824780241_55knu",
+      "email": "imperblorius@gmail.com",
+      "name": "hoang anh",
+      "role": "CUSTOMER",
+      "phone": "0343358246",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T17:06:20.241Z",
+      "passwordHash": "0e75aed732290c0b3700c2e318991f83415bb04058bc06c5f4dad566f5d37530"
+    },
+    {
+      "id": "user_1791834699861_77cbe272",
+      "email": "customera_1791834699428@test.com",
+      "name": "Khách A Đã Đổi Tên",
+      "role": "CUSTOMER",
+      "phone": "0911111111",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:51:39.861Z",
+      "passwordHash": "$2b$12$bUNP5WB9t0xrv/VVCvG9n.ChakAiEhNjfoYtihmGKVUrWiLMY.JPC"
+    },
+    {
+      "id": "user_1791834700304_d4dbf44f",
+      "email": "customerb_1791834699865@test.com",
+      "name": "Khách Hàng B",
+      "role": "CUSTOMER",
+      "phone": "0922222222",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:51:40.304Z",
+      "passwordHash": "$2b$12$ZyjUZ7A28BheXxw3q/.QheWCVTqZgAczahjfxrrCVtL2LCvdxAj1W"
+    },
+    {
+      "id": "user_1791834700769_9c7da4cf",
+      "email": "hacker_1791834700328@evil.com",
+      "name": "Kẻ Tấn Công",
+      "role": "CUSTOMER",
+      "phone": "",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:51:40.769Z",
+      "passwordHash": "$2b$12$D8UDsiWL.PRH/SzZMzbq4.SEVPu80Zcw3AIDySXrmx/48R2FkT2gK"
+    },
+    {
+      "id": "user_1791834702721_7260c87b",
+      "email": "changepass_1791834702287@test.com",
+      "name": "Khách Đổi Pass",
+      "role": "CUSTOMER",
+      "phone": "",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:51:42.722Z",
+      "passwordHash": "$2b$12$jA4AzJXoEiY4khZ2zLYTz.7ZJXz4ztHGKbz7a4W7WDgVmne.JJlAG",
+      "lastLoginAt": "2026-10-12T19:51:44.449Z"
+    },
+    {
+      "id": "user_1791834733537_c13d78fb",
+      "email": "customera_1791834733106@test.com",
+      "name": "Khách A Đã Đổi Tên",
+      "role": "CUSTOMER",
+      "phone": "0911111111",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:52:13.537Z",
+      "passwordHash": "$2b$12$BRuvnAVtxR/SWvaBNvefc.bNpOo1RKEOWCgDC1T8tVU8QEJi9SXjW"
+    },
+    {
+      "id": "user_1791834733964_dcad1ef9",
+      "email": "customerb_1791834733541@test.com",
+      "name": "Khách Hàng B",
+      "role": "CUSTOMER",
+      "phone": "0922222222",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:52:13.964Z",
+      "passwordHash": "$2b$12$bQNIcCB9G2eZpb0AGHvud.whT1Gw/oZ1lXOJG2KoFICpoEKiE5jaO"
+    },
+    {
+      "id": "user_1791834734434_55d283d7",
+      "email": "hacker_1791834733993@evil.com",
+      "name": "Kẻ Tấn Công",
+      "role": "CUSTOMER",
+      "phone": "",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:52:14.434Z",
+      "passwordHash": "$2b$12$dLL.2IkjMhkXVvTIcmMRMOCIBB5rAHgnzdt3XTAzzr6BDtrJydx1G"
+    },
+    {
+      "id": "user_1791834736394_aab5ecf4",
+      "email": "changepass_1791834735945@test.com",
+      "name": "Khách Đổi Pass",
+      "role": "CUSTOMER",
+      "phone": "",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:52:16.394Z",
+      "passwordHash": "$2b$12$dzlZtR7C2pVEJAx/vNWAWOMJLPbOanbu1ijEV3LgHC68Ivo/TEAYW",
+      "lastLoginAt": "2026-10-12T19:52:18.157Z"
+    },
+    {
+      "id": "user_1791834805045_f1a8a021",
+      "email": "customera_1791834804608@test.com",
+      "name": "Khách A Đã Đổi Tên",
+      "role": "CUSTOMER",
+      "phone": "0911111111",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:53:25.045Z",
+      "passwordHash": "$2b$12$R7XLr0qauxA2880DyndPtuTVclPTeANVguPgxfkE/sP.8BZ7QGOoK"
+    },
+    {
+      "id": "user_1791834805485_72ccc696",
+      "email": "customerb_1791834805049@test.com",
+      "name": "Khách Hàng B",
+      "role": "CUSTOMER",
+      "phone": "0922222222",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:53:25.485Z",
+      "passwordHash": "$2b$12$z/strXxLZxbe6im7vY10yOkH8KYj2bz/Ogz4Jb1yC6/f.KWQ4prVO"
+    },
+    {
+      "id": "user_1791834806015_04fc80f1",
+      "email": "hacker_1791834805511@evil.com",
+      "name": "Kẻ Tấn Công",
+      "role": "CUSTOMER",
+      "phone": "",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:53:26.015Z",
+      "passwordHash": "$2b$12$F301RzFQnWb1rgtLGUA.yexkK3fepk91pUDIGrbNTMZGfmM8wzdpe"
+    },
+    {
+      "id": "user_1791834807913_66b1fd73",
+      "email": "changepass_1791834807477@test.com",
+      "name": "Khách Đổi Pass",
+      "role": "CUSTOMER",
+      "phone": "",
+      "address": "",
+      "city": "TP. Hồ Chí Minh",
+      "createdAt": "2026-10-12T19:53:27.913Z",
+      "passwordHash": "$2b$12$.8l.H6qL02pCE5ekGkfDt.a/M725NDqVdW8K3.zhvLpzDij9rjq/m",
+      "lastLoginAt": "2026-10-12T19:53:29.646Z"
     }
   ],
   "products": [
+    {
+      "id": 1791828668782,
+      "alias": "-8782",
+      "name": "đ",
+      "category": "NIKE",
+      "price": "450.000₫",
+      "priceValue": 450000,
+      "compareAt": "",
+      "compareAtValue": 0,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/623/516/products/z7856406356461-6c8cd4a5ccaa0f3ca927642af1d7f33b-1779514525734.jpg?v=1779514528587",
+      "images": [
+        "https://bizweb.dktcdn.net/thumb/large/100/623/516/products/z7856406356461-6c8cd4a5ccaa0f3ca927642af1d7f33b-1779514525734.jpg?v=1779514528587"
+      ],
+      "available": true,
+      "sku": "PVN947",
+      "sizes": [
+        {
+          "label": "36",
+          "available": true,
+          "quantity": 4,
+          "sku": ""
+        },
+        {
+          "label": "37",
+          "available": true,
+          "quantity": 4,
+          "sku": ""
+        },
+        {
+          "label": "38",
+          "available": true,
+          "quantity": 4,
+          "sku": ""
+        },
+        {
+          "label": "39",
+          "available": true,
+          "quantity": 4,
+          "sku": ""
+        },
+        {
+          "label": "40",
+          "available": true,
+          "quantity": 4,
+          "sku": ""
+        }
+      ],
+      "description": "Giày sneaker chính hãng PhuAnh Sneaker, đế cao su êm ái bền bỉ.",
+      "isNewArrival": true,
+      "createdAt": "2026-10-12T18:11:08.793Z"
+    },
     {
       "id": 81265049,
       "alias": "cortez-1985-do",
@@ -48,8 +247,8 @@
         },
         {
           "label": "37",
-          "available": true,
-          "quantity": 1,
+          "available": false,
+          "quantity": 0,
           "sku": "PVN669"
         },
         {
@@ -61,7 +260,7 @@
         {
           "label": "39",
           "available": true,
-          "quantity": 7,
+          "quantity": 4,
           "sku": "PVN671"
         },
         {
@@ -1619,6 +1818,174 @@
   ],
   "orders": [
     {
+      "id": "PA-115661",
+      "userId": "user_1791834805485_72ccc696",
+      "customer": {
+        "fullName": "Khách B",
+        "phone": "0922222222",
+        "address": "123 Đường B",
+        "city": "TP. Hồ Chí Minh",
+        "notes": ""
+      },
+      "items": [
+        {
+          "id": 81265049,
+          "alias": "cortez-1985-do",
+          "name": "cortez 1985 đỏ",
+          "category": "NIKE",
+          "image": "https://bizweb.dktcdn.net/100/623/516/products/z7856406356461-6c8cd4a5ccaa0f3ca927642af1d7f33b-1779514525734.jpg?v=1779514528587",
+          "price": "460.000₫",
+          "priceValue": 460000,
+          "size": "39",
+          "sizeSku": "PVN671",
+          "quantity": 1
+        }
+      ],
+      "payment": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "subtotal": 460000,
+      "discount": 0,
+      "shipping": 30000,
+      "total": 490000,
+      "statusHistory": [
+        {
+          "status": "pending",
+          "updatedAt": "2026-10-12T19:53:25.493Z",
+          "note": "Khách hàng tạo đơn hàng"
+        }
+      ],
+      "inventoryRestored": false,
+      "createdAt": "2026-10-12T19:53:25.493Z",
+      "updatedAt": "2026-10-12T19:53:25.493Z"
+    },
+    {
+      "id": "PA-395610",
+      "userId": "user_1791834733964_dcad1ef9",
+      "customer": {
+        "fullName": "Khách B",
+        "phone": "0922222222",
+        "address": "123 Đường B",
+        "city": "TP. Hồ Chí Minh",
+        "notes": ""
+      },
+      "items": [
+        {
+          "id": 81265049,
+          "alias": "cortez-1985-do",
+          "name": "cortez 1985 đỏ",
+          "category": "NIKE",
+          "image": "https://bizweb.dktcdn.net/100/623/516/products/z7856406356461-6c8cd4a5ccaa0f3ca927642af1d7f33b-1779514525734.jpg?v=1779514528587",
+          "price": "460.000₫",
+          "priceValue": 460000,
+          "size": "39",
+          "sizeSku": "PVN671",
+          "quantity": 1
+        }
+      ],
+      "payment": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "subtotal": 460000,
+      "discount": 0,
+      "shipping": 30000,
+      "total": 490000,
+      "statusHistory": [
+        {
+          "status": "pending",
+          "updatedAt": "2026-10-12T19:52:13.972Z",
+          "note": "Khách hàng tạo đơn hàng"
+        }
+      ],
+      "inventoryRestored": false,
+      "createdAt": "2026-10-12T19:52:13.972Z",
+      "updatedAt": "2026-10-12T19:52:13.972Z"
+    },
+    {
+      "id": "PA-894752",
+      "userId": "user_1791834700304_d4dbf44f",
+      "customer": {
+        "fullName": "Khách B",
+        "phone": "0922222222",
+        "address": "123 Đường B",
+        "city": "TP. Hồ Chí Minh",
+        "notes": ""
+      },
+      "items": [
+        {
+          "id": 81265049,
+          "alias": "cortez-1985-do",
+          "name": "cortez 1985 đỏ",
+          "category": "NIKE",
+          "image": "https://bizweb.dktcdn.net/100/623/516/products/z7856406356461-6c8cd4a5ccaa0f3ca927642af1d7f33b-1779514525734.jpg?v=1779514528587",
+          "price": "460.000₫",
+          "priceValue": 460000,
+          "size": "39",
+          "sizeSku": "PVN671",
+          "quantity": 1
+        }
+      ],
+      "payment": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "subtotal": 460000,
+      "discount": 0,
+      "shipping": 30000,
+      "total": 490000,
+      "statusHistory": [
+        {
+          "status": "pending",
+          "updatedAt": "2026-10-12T19:51:40.312Z",
+          "note": "Khách hàng tạo đơn hàng"
+        }
+      ],
+      "inventoryRestored": false,
+      "createdAt": "2026-10-12T19:51:40.312Z",
+      "updatedAt": "2026-10-12T19:51:40.312Z"
+    },
+    {
+      "id": "PA-681207",
+      "userId": "user_1791824780241_55knu",
+      "customer": {
+        "fullName": "hoang anh",
+        "phone": "0343358246",
+        "address": "89 phạm văn đồng/ mai dịch cầu giấy hà nội",
+        "city": "TP. Hồ Chí Minh",
+        "notes": ""
+      },
+      "items": [
+        {
+          "id": 81265049,
+          "alias": "cortez-1985-do",
+          "name": "cortez 1985 đỏ",
+          "category": "NIKE",
+          "image": "https://bizweb.dktcdn.net/100/623/516/products/z7856406356461-6c8cd4a5ccaa0f3ca927642af1d7f33b-1779514525734.jpg?v=1779514528587",
+          "price": "460.000₫",
+          "priceValue": 460000,
+          "size": "37",
+          "sizeSku": "PVN669",
+          "quantity": 1
+        }
+      ],
+      "payment": "transfer",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "subtotal": 460000,
+      "discount": 0,
+      "shipping": 30000,
+      "total": 490000,
+      "statusHistory": [
+        {
+          "status": "pending",
+          "updatedAt": "2026-10-12T17:06:53.010Z",
+          "note": "Khách hàng hoàn tất tạo đơn"
+        }
+      ],
+      "inventoryRestored": false,
+      "createdAt": "2026-10-12T17:06:53.010Z",
+      "updatedAt": "2026-10-12T17:06:53.010Z"
+    },
+    {
       "id": "PA-280329",
       "customer": {
         "fullName": "Khách Test",
@@ -1791,6 +2158,145 @@
   ],
   "inventoryMovements": [
     {
+      "id": "mv_1791834805493_fea29b",
+      "productId": 81265049,
+      "productName": "cortez 1985 đỏ",
+      "productAlias": "cortez-1985-do",
+      "size": "39",
+      "sku": "PVN671",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousQuantity": 5,
+      "newQuantity": 4,
+      "reason": "Đơn hàng mới PA-115661",
+      "orderId": "PA-115661",
+      "performedBy": "Khách Hàng B",
+      "createdAt": "2026-10-12T19:53:25.493Z"
+    },
+    {
+      "id": "mv_1791834733972_7628bf",
+      "productId": 81265049,
+      "productName": "cortez 1985 đỏ",
+      "productAlias": "cortez-1985-do",
+      "size": "39",
+      "sku": "PVN671",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousQuantity": 6,
+      "newQuantity": 5,
+      "reason": "Đơn hàng mới PA-395610",
+      "orderId": "PA-395610",
+      "performedBy": "Khách Hàng B",
+      "createdAt": "2026-10-12T19:52:13.972Z"
+    },
+    {
+      "id": "mv_1791834700312_10e0a6",
+      "productId": 81265049,
+      "productName": "cortez 1985 đỏ",
+      "productAlias": "cortez-1985-do",
+      "size": "39",
+      "sku": "PVN671",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousQuantity": 7,
+      "newQuantity": 6,
+      "reason": "Đơn hàng mới PA-894752",
+      "orderId": "PA-894752",
+      "performedBy": "Khách Hàng B",
+      "createdAt": "2026-10-12T19:51:40.312Z"
+    },
+    {
+      "id": "mv_1791828668793_2ydv",
+      "productId": 1791828668782,
+      "productName": "đ",
+      "productAlias": "-8782",
+      "size": "40",
+      "sku": "PVN947-40",
+      "type": "import",
+      "quantityDelta": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Nhập kho sản phẩm mới khởi tạo",
+      "performedBy": "Admin PhuAnh Sneaker",
+      "createdAt": "2026-10-12T18:11:08.793Z"
+    },
+    {
+      "id": "mv_1791828668793_2g3u",
+      "productId": 1791828668782,
+      "productName": "đ",
+      "productAlias": "-8782",
+      "size": "39",
+      "sku": "PVN947-39",
+      "type": "import",
+      "quantityDelta": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Nhập kho sản phẩm mới khởi tạo",
+      "performedBy": "Admin PhuAnh Sneaker",
+      "createdAt": "2026-10-12T18:11:08.793Z"
+    },
+    {
+      "id": "mv_1791828668793_x8rp",
+      "productId": 1791828668782,
+      "productName": "đ",
+      "productAlias": "-8782",
+      "size": "38",
+      "sku": "PVN947-38",
+      "type": "import",
+      "quantityDelta": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Nhập kho sản phẩm mới khởi tạo",
+      "performedBy": "Admin PhuAnh Sneaker",
+      "createdAt": "2026-10-12T18:11:08.793Z"
+    },
+    {
+      "id": "mv_1791828668793_sg52",
+      "productId": 1791828668782,
+      "productName": "đ",
+      "productAlias": "-8782",
+      "size": "37",
+      "sku": "PVN947-37",
+      "type": "import",
+      "quantityDelta": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Nhập kho sản phẩm mới khởi tạo",
+      "performedBy": "Admin PhuAnh Sneaker",
+      "createdAt": "2026-10-12T18:11:08.793Z"
+    },
+    {
+      "id": "mv_1791828668793_gjx5",
+      "productId": 1791828668782,
+      "productName": "đ",
+      "productAlias": "-8782",
+      "size": "36",
+      "sku": "PVN947-36",
+      "type": "import",
+      "quantityDelta": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Nhập kho sản phẩm mới khởi tạo",
+      "performedBy": "Admin PhuAnh Sneaker",
+      "createdAt": "2026-10-12T18:11:08.793Z"
+    },
+    {
+      "id": "mv_1791824813011_os5h",
+      "productId": 81265049,
+      "productName": "cortez 1985 đỏ",
+      "productAlias": "cortez-1985-do",
+      "size": "37",
+      "sku": "PVN669",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Đơn hàng mới PA-681207",
+      "orderId": "PA-681207",
+      "performedBy": "hoang anh",
+      "createdAt": "2026-10-12T17:06:53.010Z"
+    },
+    {
       "id": "mv_1791824575553_xuw8",
       "productId": 81265049,
       "productName": "cortez 1985 đỏ",
@@ -1931,5 +2437,250 @@
     "bankOwner": "PHUANH SNEAKER",
     "shippingFee": 30000,
     "freeShippingThreshold": 1000000
-  }
+  },
+  "sessions": [
+    {
+      "id": "9e0ac6d7-4c7c-4714-ada4-d1866a474dc8",
+      "userId": "user_customer_demo",
+      "tokenHash": "b6316080487aabbd47aa20825558bfb1903eec2af55c7c3eaa99606ca42033b3",
+      "csrfToken": "eddae563dfb8ffd3097cbfc6eae8e4150f5aca8103bcde65",
+      "createdAt": "2026-10-12T19:51:39.403Z",
+      "expiresAt": "2026-10-19T19:51:39.402Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "e0bd2097-2172-478b-ae9f-71d7a95423ab",
+      "userId": "user_1791834699861_77cbe272",
+      "tokenHash": "fc140b75442b9ca790b1a74aa918052214a3846f9939118cda7a5779443cb72d",
+      "csrfToken": "8d64ad4eb98b7e0dfbd8feee59c3e268622f69953294750a",
+      "createdAt": "2026-10-12T19:51:39.862Z",
+      "expiresAt": "2026-10-19T19:51:39.861Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "4a10c324-7041-4d94-9775-d4e7e4b2b602",
+      "userId": "user_1791834700304_d4dbf44f",
+      "tokenHash": "521bae1008e9ae40a5c9f1f2407fc4fc590360c838195da06084f14d78fc2aaa",
+      "csrfToken": "da7efdc2caae21d5d121e610c3b57ad8a56e21c7148e26ac",
+      "createdAt": "2026-10-12T19:51:40.305Z",
+      "expiresAt": "2026-10-19T19:51:40.304Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "6db26eb9-8157-42b9-9df8-4528efd43a42",
+      "userId": "user_1791834700769_9c7da4cf",
+      "tokenHash": "dbb4ea53953aa3298f890b1b423df3136555540f23f62f86218f3eb047e81d40",
+      "csrfToken": "c03b2d202eb9802243d2573c9b256030396224ab9a79682a",
+      "createdAt": "2026-10-12T19:51:40.769Z",
+      "expiresAt": "2026-10-19T19:51:40.769Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "f9626243-06cc-41fe-b303-448bdb31a253",
+      "userId": "user_customer_demo",
+      "tokenHash": "abbcb5fc5bfbe3be17721de5f4270e47fb198552298a7e79d2c2ac961dde6fb2",
+      "csrfToken": "5c26f68cc5b1c58d6d2954ec6657e82c8afbd0c7d18fefc0",
+      "createdAt": "2026-10-12T19:51:41.830Z",
+      "expiresAt": "2026-10-19T19:51:41.829Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node",
+      "revokedAt": "2026-10-12T19:51:41.839Z"
+    },
+    {
+      "id": "0bfa7105-2645-4e3c-95fc-58267db310d1",
+      "userId": "user_admin_phuanh",
+      "tokenHash": "096c769b683aae70173c1a313691713950c32be29850a1bf31d1d5e3fbe91497",
+      "csrfToken": "32337da1964a4c82f752e993ddbb8ed5f2019f7d01e9e142",
+      "createdAt": "2026-10-12T19:51:42.280Z",
+      "expiresAt": "2026-10-19T19:51:42.279Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "8dfa5510-e697-4c99-84e2-0ea6b065c0fa",
+      "userId": "user_1791834702721_7260c87b",
+      "tokenHash": "852da2bb704531b1ea348ab4dc600f53ba1e662a40a91d0a3e9e050d7945649f",
+      "csrfToken": "8ee74b1488dba5a1118313b9ac6a27ee83cb37c69d973bc0",
+      "createdAt": "2026-10-12T19:51:42.723Z",
+      "expiresAt": "2026-10-19T19:51:42.722Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "949cab2e-c187-41e6-ab26-d87b2a903569",
+      "userId": "user_1791834702721_7260c87b",
+      "tokenHash": "2c988d2357b9240617b76ffa7760939109487c67be7d0871be648c0c6b47991a",
+      "csrfToken": "b556cf3ed02746467d81c7d7abfe106d54bbe28b37938763",
+      "createdAt": "2026-10-12T19:51:44.448Z",
+      "expiresAt": "2026-10-19T19:51:44.447Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "0b46268f-5022-4ce2-a5b0-05a946f8255d",
+      "userId": "user_customer_demo",
+      "tokenHash": "f46d41adca07b9ae7c04d66a6376f28f84535a39feb940318b5c321411b98204",
+      "csrfToken": "4362f5f16a522963a8a90b088787cf28defd506fdbaa8d2d",
+      "createdAt": "2026-10-12T19:52:13.080Z",
+      "expiresAt": "2026-10-19T19:52:13.079Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "6572ffea-51b3-4369-a6b7-3d667cddafcd",
+      "userId": "user_1791834733537_c13d78fb",
+      "tokenHash": "657d850645b340c6abd6ca0d77064363f62360fb30ca0dcd926c03dfddafcb41",
+      "csrfToken": "3db4f560b60042dbdf29a01cd893afd3a993bf4dacc09e26",
+      "createdAt": "2026-10-12T19:52:13.538Z",
+      "expiresAt": "2026-10-19T19:52:13.538Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "c0fbeff3-92b2-44a2-9524-3c5888b90b39",
+      "userId": "user_1791834733964_dcad1ef9",
+      "tokenHash": "464e264a28229ac7169de78cd540a8d0a54cae5b08c568f60f658ac3dcc4117e",
+      "csrfToken": "41056f718c32e9a67aa5f0e9297b73dd59ace3b1b8dbd528",
+      "createdAt": "2026-10-12T19:52:13.965Z",
+      "expiresAt": "2026-10-19T19:52:13.964Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "1cb3d0d7-fc1a-43de-bb27-1a111e3d880a",
+      "userId": "user_1791834734434_55d283d7",
+      "tokenHash": "5d248f4a2e5742451c4bcd03004ddec63113319f65963b9b20c0d1265ab09b27",
+      "csrfToken": "dcc49642d2c6dad25a826dd1b6b312bc915f9f2dfbbd4386",
+      "createdAt": "2026-10-12T19:52:14.434Z",
+      "expiresAt": "2026-10-19T19:52:14.434Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "9dc892ba-dcf6-41b1-b1be-1432e1478ae7",
+      "userId": "user_customer_demo",
+      "tokenHash": "db1550790be886d5fe8db340ef74fb48aae56416a63cf5a6cb85bf28e3e1e8b2",
+      "csrfToken": "a7695de3ebec066484bd6c91e5086d222cf0d726f19c77b5",
+      "createdAt": "2026-10-12T19:52:15.465Z",
+      "expiresAt": "2026-10-19T19:52:15.464Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node",
+      "revokedAt": "2026-10-12T19:52:15.476Z"
+    },
+    {
+      "id": "bd47d25e-0d84-4d75-840d-c02a4ba23b43",
+      "userId": "user_admin_phuanh",
+      "tokenHash": "fe09ef4cb8dd0926cf27257067614578d094abda10597f7dab033d9dd937e402",
+      "csrfToken": "5a6d2da00164dd64e69e76fd0dd0a52490d90869c365ccd8",
+      "createdAt": "2026-10-12T19:52:15.934Z",
+      "expiresAt": "2026-10-19T19:52:15.934Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "8ec3761b-6b8b-40d8-b7cc-a1f10cb2a9ef",
+      "userId": "user_1791834736394_aab5ecf4",
+      "tokenHash": "9594ff41e0abf98480a81bc5b6a5100d1ad547b15bf342692f0a242fa9362a36",
+      "csrfToken": "983ee405b68da0246d5c4575972636150a125a5e28aac87d",
+      "createdAt": "2026-10-12T19:52:16.395Z",
+      "expiresAt": "2026-10-19T19:52:16.394Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "a80435ed-1b38-4b89-b8ed-170dbe19b1a9",
+      "userId": "user_1791834736394_aab5ecf4",
+      "tokenHash": "b5dbc1e09404dda2c0863ca3b4afe741ce4b9f8b20a14a266c2859afb92e11a9",
+      "csrfToken": "19ccf4669e758cd73d1093407d842cecdb4259c574382fb2",
+      "createdAt": "2026-10-12T19:52:18.155Z",
+      "expiresAt": "2026-10-19T19:52:18.155Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "63a9b9e9-3c29-42ce-b878-f801f4d7a541",
+      "userId": "user_customer_demo",
+      "tokenHash": "ab35568da2f4ad6898f86455eaeea009599d3b77bab5ccdf7c80b743228903b9",
+      "csrfToken": "1e64797ea4ec57170d825f1813c37c1664540e13fdd9cce8",
+      "createdAt": "2026-10-12T19:53:24.585Z",
+      "expiresAt": "2026-10-19T19:53:24.584Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "16078722-48e9-40b7-a32b-7ee2cf265ec5",
+      "userId": "user_1791834805045_f1a8a021",
+      "tokenHash": "17610a142667dcf8e88f0e2eca748fd4243126421c1f9f7668d48b3bcfaf29b7",
+      "csrfToken": "c0884261b506ee64088d0b76a78fc164b96bb70c2dccc426",
+      "createdAt": "2026-10-12T19:53:25.046Z",
+      "expiresAt": "2026-10-19T19:53:25.045Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "2f4028c4-ac54-4229-a5d5-ef90a05af398",
+      "userId": "user_1791834805485_72ccc696",
+      "tokenHash": "2728346c6c03b5be4913063afc72c364af6e35e20b2e9f6c35c9ac6e59173bfc",
+      "csrfToken": "048b71ec8cf154ceeedb9bcf36dade39f89c6fa9e3ae64ed",
+      "createdAt": "2026-10-12T19:53:25.486Z",
+      "expiresAt": "2026-10-19T19:53:25.485Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "ca472f1f-36e1-4971-9a8d-40fb2393f945",
+      "userId": "user_1791834806015_04fc80f1",
+      "tokenHash": "581841dd1e30c5a0fc4176a273c6d8c5c19a5071997bdaa5cdae3f8a981ce3d0",
+      "csrfToken": "bcd8cd39348e17b71d16492170d67858a5c0e7f804feff63",
+      "createdAt": "2026-10-12T19:53:26.016Z",
+      "expiresAt": "2026-10-19T19:53:26.015Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "45ae0d8e-72a3-4197-8c76-bddfd71c0cf2",
+      "userId": "user_customer_demo",
+      "tokenHash": "572a8af400120cddb6142f6d56637b58e97e5fbe5cdf59c2b60afdce0dab6984",
+      "csrfToken": "82d5fec3caaa22733b79ca2d0e943e262611a1a1fcbb05ff",
+      "createdAt": "2026-10-12T19:53:27.019Z",
+      "expiresAt": "2026-10-19T19:53:27.019Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node",
+      "revokedAt": "2026-10-12T19:53:27.029Z"
+    },
+    {
+      "id": "596cbd11-d17e-4a95-84e7-f15ad223f851",
+      "userId": "user_admin_phuanh",
+      "tokenHash": "c45bd1b4f6d2bedd0cff3000b97792466cd8276eaf10696d772b41840ee5b193",
+      "csrfToken": "91c8335f24f5a6f7be2c4741c6bd56d54b8d776f28c4102e",
+      "createdAt": "2026-10-12T19:53:27.467Z",
+      "expiresAt": "2026-10-19T19:53:27.466Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "120dec44-cadb-4fbb-a833-db6f5e072d96",
+      "userId": "user_1791834807913_66b1fd73",
+      "tokenHash": "f754aecffa398ff10a2c9db8b5940a684c6e85110588acd7644c8757385c2ea1",
+      "csrfToken": "6b035315aa3f1d64bfd73462184201de9a76d59fe97b8b2f",
+      "createdAt": "2026-10-12T19:53:27.914Z",
+      "expiresAt": "2026-10-19T19:53:27.913Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    },
+    {
+      "id": "f9f4fa6a-0e9b-4adf-8a61-0f3da1f35efe",
+      "userId": "user_1791834807913_66b1fd73",
+      "tokenHash": "75e05b4c9c6c4b95c2da868b810965025c53b83d9ee36842b8a41629a7fb346d",
+      "csrfToken": "ab8e3764aea75c5186ee1004983c2071f3704b65dba90959",
+      "createdAt": "2026-10-12T19:53:29.645Z",
+      "expiresAt": "2026-10-19T19:53:29.644Z",
+      "ip": "127.0.0.1",
+      "userAgent": "node"
+    }
+  ]
 }

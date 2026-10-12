@@ -15,6 +15,7 @@ interface AuthContextType {
   register: (payload: { name: string; email: string; password: string; phone?: string; address?: string; city?: string }) => Promise<boolean>;
   logout: () => Promise<void>;
   updateProfile: (payload: { name?: string; phone?: string; address?: string; city?: string }) => Promise<boolean>;
+  changePassword: (payload: { currentPassword: string; newPassword: string }) => Promise<boolean>;
   refreshUser: () => Promise<void>;
 }
 
@@ -109,6 +110,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  const changePassword = async (payload: { currentPassword: string; newPassword: string }): Promise<boolean> => {
+    try {
+      const res = await api.changePassword(payload);
+      showToast(res.message || 'Đổi mật khẩu thành công', 'success');
+      return true;
+    } catch (err: any) {
+      showToast(err.message || 'Đổi mật khẩu thất bại', 'error');
+      return false;
+    }
+  };
+
   const isAdmin = user?.role === 'ADMIN';
 
   return (
@@ -125,6 +137,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         register,
         logout,
         updateProfile,
+        changePassword,
         refreshUser,
       }}
     >

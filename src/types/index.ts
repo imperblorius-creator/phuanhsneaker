@@ -9,8 +9,21 @@ export interface User {
   address?: string;
   city?: string;
   createdAt: string;
+  lastLoginAt?: string;
   isBlocked?: boolean;
   notes?: string;
+}
+
+export interface Session {
+  id: string; // jti
+  userId: string;
+  tokenHash: string;
+  csrfToken: string;
+  createdAt: string;
+  expiresAt: string;
+  revokedAt?: string;
+  ip?: string;
+  userAgent?: string;
 }
 
 export interface ProductSize {
